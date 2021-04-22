@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "NativeDevice",
-    "slug": "NativeDevice",
+    "name": "Great Places",
+    "deacription" : "Some text",
+    "slug": "great-places",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,14 +18,26 @@
       "**/*"
     ],
     "ios": {
+      "package": "com.acdemind.great-places-course",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.acdemind.great_places_course",
+      "versionCode": 1,
+      "buildNumber": "1.0.0",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permission": ["ACCESS_FINE_LOCATION","CAMERA","WRITE_EXTERNAL_STORAGE"],
+                     "config" : {
+                      "googleMaps": {
+                        "apiKey": "AIzaSyDNR6IFxg1jAGC5ZlWCVfW8a4mb-QwoBlo"
+                      }
+                     }
+                           
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
     }
